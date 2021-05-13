@@ -12,5 +12,4 @@ steps:
 
   # Deploy to google cloud app engine
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "--version=prod"]
-    dir: "angular-on-gcp"
+    args: ["app", "deploy"]
