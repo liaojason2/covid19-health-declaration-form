@@ -1,1 +1,91 @@
-<p>user-register works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.0/examples/heroes/heroes.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Checkout example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <h5 class="nav glyphicon">快速實聯制</h5>
+
+            <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></div>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-danger me-3">Google 登入</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<body class="bg-light">
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <h2>第一次登入</h2>
+                <p class="lead">第一次登入需先填寫資料</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-5 col-lg-5 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">你的帳號</span>
+                    </h4>
+                    <img class="d-block mx-auto mb-4" src="https://i.imgur.com/Nsox9Mm.png" alt="" width="250"
+                        height="250">
+                </div>
+                <div class="col-md-7 col-lg-5">
+                    <h4 class="mb-3">基本資料</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput">
+                                <label for="floatingInput">姓名</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput">
+                                <label for="floatingInput">電話</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingInput">
+                                <label for="floatingInput">身分證字號</label>
+                            </div>
+                            <div class="col-md-5">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

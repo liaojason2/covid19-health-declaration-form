@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MerchantRegisterComponent } from './merchant-register/merchant-register.component';
@@ -12,11 +15,14 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     MerchantRegisterComponent,
     UserRegisterComponent,
-    LandingPageComponent
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
