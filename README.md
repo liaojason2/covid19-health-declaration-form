@@ -1,27 +1,19 @@
-# AngularOnGcp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# 快速實聯制
+因應政府在疫情實行的實聯制政策，進出各大公共場所時需要填寫實聯制表單，確保確診後可以透過實聯制的資料找到接觸者。本專案透過綁定社群帳號與實聯制所需資料，解決每次進入店家時都要花時間在填寫資料上的問題。
+## Demo
+[Demo (Host on Google Cloud Platform)](https://gcp2021test.uc.r.appspot.com/)
+## 流程圖
+### 系統架構圖
+![](./images/系統架構圖.png)
+### 程式流程圖
+![](./images/程式流程圖.png)
+## TODO
+- 表單資料驗證
+- 社群網站登錄串接
+- 產生商家 QR Code
+## 其他資訊
+快速實聯制是四位高中生於 2021 北區 DSC 聯合黑客松開發的作品。
+- [@AlecWu-127](https://www.github.com/AlecWu-127)
+- [@Tr00y2ooo](https://github.com/Impossibleimagine)
+- [@Suifung0214](https://github.com/Suifeng0214)
+- [@terhead8775](https://github.com/terhead8775)
