@@ -18,7 +18,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { from } from 'rxjs';
 import { AuthService } from "./shared/services/auth.service";
-import { SignInComponent } from './components/sign-in/sign-in.component';
+//import { SignInComponent } from './components/sign-in/sign-in.component';
 
 
 @NgModule({
@@ -27,7 +27,6 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
     MerchantRegisterComponent,
     UserRegisterComponent,
     LandingPageComponent,
-    SignInComponent,
   ],
   imports: [
     BrowserModule,
