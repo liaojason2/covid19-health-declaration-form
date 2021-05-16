@@ -12,8 +12,9 @@
 - 社群網站登錄串接
 - 產生商家 QR Code
 ## 其他資訊
-快速實聯制是四位高中生於 2021 北區 DSC 聯合黑客松開發的作品。
+快速實聯制是五位高中生於 2021 北區 DSC 聯合黑客松開發的作品。
 - [@AlecWu-127](https://www.github.com/AlecWu-127)
-- [@Tr00y2ooo](https://github.com/Impossibleimagine)
-- [@Suifung0214](https://github.com/Suifeng0214)
-- [@terhead8775](https://github.com/terhead8775)
+- [@Tr00y2ooo](https://www.github.com/Impossibleimagine)
+- [@Suifung0214](https://www.github.com/Suifeng0214)
+- [@terhead8775](https://www.github.com/terhead8775)
+- [@liaojason2](https://www.github.com/liaojason2)
