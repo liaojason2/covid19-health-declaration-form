@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gcp2021test": {
+      "hosting": {
+        "angular-on-gcp": [
+          "gcp2021test"
+        ]
+      }
+    }
+  }
+}
