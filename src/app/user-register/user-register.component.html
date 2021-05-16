@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/5.0/examples/heroes/heroes.css" rel="stylesheet">
@@ -60,32 +61,61 @@
                     <img class="d-block mx-auto mb-4" src="https://i.imgur.com/Nsox9Mm.png" alt="" width="250"
                         height="250">
                 </div>
-                <div class="col-md-7 col-lg-5">
+                <!---
+                <div class="submit-form col-md-7 col-lg-5">
                     <h4 class="mb-3">基本資料</h4>
-                    <form class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput">
-                                <label for="floatingInput">姓名</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput">
-                                <label for="floatingInput">電話</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingInput">
-                                <label for="floatingInput">身分證字號</label>
-                            </div>
-                            <div class="col-md-5">
-
-                            </div>
+                    <div class="row g-3">
+                        <div class="form-group form-floating mb-3">
+                            <label for="form-floating">姓名</label>
+                            <input type="text" class="form-control" id="name" required [(ngModel)]="userdata.name"
+                                name="name">
                         </div>
-                    </form>
+                        <div class="form-group form-floating mb-3">
+                            <label for="floatingInput">電話</label>
+                            <input type="text" class="form-control" id="phone" required [(ngModel)]="userdata.phone"
+                                name="phone">
+                        </div>
+                        <div class="form-group form-floating mb-3">
+                            <label for="floatingInput">身分證字號</label>
+                            <input type="password" class="form-control" id="nid" ] required [(ngModel)]="userdata.nid"
+                                name="nid">
+                        </div>
+                        <button (click)="saveUserdata()" class="btn btn-success">Submit</button>
+                    </div>
+                    <div *ngIf="submitted">
+                        <h4>You submitted successfully!</h4>
+                        <button class="btn btn-success" (click)="NewUserdata()">Add</button>
+                    </div>
+                </div>
+            </div>-->
+                <div class="submit-form col-md-7 col-lg-5">
+                    <h4 class="mb-3">基本資料</h4>
+                    <div *ngIf="!submitted">
+                        <div class="form-group mb-3">
+                            <label for="title">姓名</label>
+                            <input type="text" class="form-control" id="title" required [(ngModel)]="userdata.user"
+                                name="title" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="phone">電話</label>
+                            <input class="form-control" id="phone" required [(ngModel)]="userdata.phone"
+                                name="phone" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="nid">身分證字號</label>
+                            <input type="text" class="form-control" id="nid" required [(ngModel)]="userdata.nid"
+                                name="nid" />
+                        </div>
+                        <button (click)="saveUserdata()" class="btn btn-success">Submit</button>
+                    </div>
+                    <div *ngIf="submitted">
+                        <h4>You submitted successfully!</h4>
+                        <button class="btn btn-success" (click)="NewUserdata()">Add</button>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
-
 </body>
 
 </html>
