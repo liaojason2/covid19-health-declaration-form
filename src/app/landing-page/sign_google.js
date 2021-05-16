@@ -13,3 +13,5 @@ const signInWithGoogle = () => {
         console.error(error);
     })
 }
+
+signInWithGoogleButton.addEventListener('click', signInWithGoogle);
