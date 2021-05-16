@@ -6,6 +6,7 @@ import { FormsModule, AbstractControl, FormBuilder, FormGroup } from '@angular/f
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
@@ -16,6 +17,9 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { from } from 'rxjs';
+import { AuthService } from "./shared/services/auth.service";
+import { SignInComponent } from './components/sign-in/sign-in.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +27,7 @@ import { from } from 'rxjs';
     MerchantRegisterComponent,
     UserRegisterComponent,
     LandingPageComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +38,10 @@ import { from } from 'rxjs';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
+
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
